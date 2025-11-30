@@ -1,6 +1,11 @@
+import { defineCustomElements } from './assets/mycomponents/dist/loader/index.js';
+
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+// Registrar los Web Components de Stencil
+defineCustomElements();
+
+// Iniciar Angular
+bootstrapApplication(AppComponent)
+  .catch(err => console.error(err));

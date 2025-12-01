@@ -1,4 +1,4 @@
-import { defineCustomElements } from './assets/mycomponents/dist/loader/index.js';
+import { defineCustomElements } from './assets/dist/loader/index.js';
 
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
